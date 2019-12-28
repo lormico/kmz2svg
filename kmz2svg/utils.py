@@ -33,3 +33,24 @@ def is_valid_kmz(file_path: str) -> bool:
     except Exception as e:
         print("Found unhandled exception %s: %s" % (type(e), e))
     return False
+
+
+def mymax(a, b) -> float:
+    try:
+        return max(a,b)
+    except:
+        if a is None:
+            return b
+        if b is None:
+            return a
+        return -1
+
+def mymin(a, b) -> float:
+    try:
+        return min(a,b)
+    except:
+        if a is None:
+            return b
+        if b is None:
+            return a
+        return -1
